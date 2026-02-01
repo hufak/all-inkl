@@ -1,0 +1,3 @@
+HOME=/www/htdocs/${USER##*\-}
+alias occ='php $HOME/cloud.hufak.net/occ'
+
