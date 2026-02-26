@@ -1,0 +1,3 @@
+[submodule "cloud.hufak.net/apps/hufak"]
+	path = cloud.hufak.net/apps/hufak
+	url = https://github.com/hufak/nc-hufak-admin.git
