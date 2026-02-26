@@ -1,9 +1,9 @@
-$person_name ($pronouns)
+:HTML:$person_name (<i>$pronouns</i>)
 
-$department_name
+$department_de / $department_en
 
 hufak // Hochschüler_innenschaft der Universität für angewandte Kunst Wien
 Oskar Kokoschka-Platz 2
 1010 Wien
-@hufak.angewandte
-https://hufak.net/
+<a href="https://www.instagram.com/hufak.angewandte/" target="_blank">@hufak.angewandte</a>
+<a href="https://hufak.net" target="_blank">https://hufak.net</a>

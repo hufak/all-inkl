@@ -1,21 +1,41 @@
 # this is a comment
 
-[infra]
-de = Infrastruktur & Events
-en = Infrastructure & Events
-
 [bipol]
+de = "Referat für Bildung & Politik"
+en = "Department for Education & Politics"
 
-[queerfem]
-
-[vorsitzteam]
+[infra]
+de = "Infrastruktur & Events"
+en = "Infrastructure & Events"
 
 [international]
-
-[wirtschaftsreferat]
-
-[pr]
-
-[social]
+en = "Department for International Students"
+de = "Referat für internationale Studierende"
 
 [it]
+de = "Referat für IT und digitale Infrastruktur"
+en = "Department for IT and digital Infrastructure"
+
+[kunstundtheorie]
+de = "Referat Kunst & Theorie"
+en = "Department for Art & Theory"
+
+[pr]
+en = "Department for Public Relations"
+de = "Referat für Presse und Öffentlichkeitsarbeit"
+
+[queerfem]
+de = "Referat für intersektionalen Queerfeminismus"
+en = "Department for intersectional queerfeminism"
+
+[social]
+en = "Department for Social Affairs"
+de = "Sozialreferat"
+
+[vorsitzteam]
+de = "Vorsitzteam"
+en = "Chairteam"
+
+[wirtschaftsreferat]
+en = "Department for Financial Affairs"
+de = "Wirtschaftsreferat"

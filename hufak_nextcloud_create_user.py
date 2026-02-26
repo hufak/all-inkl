@@ -13,6 +13,7 @@ from rich.table import Table
 
 from hufak_mailboxes import EMAIL_DOMAIN
 from hufak_nextcloud_occ import run_occ
+from hufak_nextcloud_snappymail import select_snappymail_main_account
 
 console = Console()
 
@@ -196,9 +197,19 @@ def main():
             )
         )
 
-    # TODO set app order
-    # occ user:settings ${username} core apporder ""
-    # TODO set email account
+    # set app order
+    run_occ(
+        [
+            "user:setting",
+            username,
+            "core",
+            "apporder",
+            '{"dashboard":{"order":0,"app":"dashboard"},"snappymail":{"order":1,"app":"snappymail"},"collectives":{"order":2,"app":"collectives"},"tables_application_1":{"order":3},"calendar":{"order":4,"app":"calendar"},"files":{"order":5,"app":"files"},"contacts":{"order":6,"app":"contacts"},"polls":{"order":7,"app":"polls"},"tables":{"order":8,"app":"tables"},"passwords":{"order":9,"app":"passwords"},"mail":{"order":10,"app":"mail"},"occweb":{"order":11,"app":"occweb"}}',
+        ]
+    )
+
+    # set email account
+    select_snappymail_main_account(username)
 
 
 if __name__ == "__main__":

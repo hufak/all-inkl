@@ -8,18 +8,14 @@ EMAIL_DOMAIN = "hufak.net"
 # )
 
 
-def load_shared_mailboxes() -> list[dict[str, str]]:
+def load_shared_mailboxes() -> dict[str, dict[str, str]]:
     if not CONFIG_FILE.exists():
-        return []
+        return {}
 
     data = tomllib.loads(CONFIG_FILE.read_text())
 
-    return [
-        {
-            "prefix": prefix,
-            "name": cfg.get("name", prefix),
-            "email": f"{prefix}@{EMAIL_DOMAIN}",
-        }
+    return {
+        f"{prefix}@{EMAIL_DOMAIN}": cfg
         for prefix, cfg in data.items()
         if isinstance(cfg, dict)
-    ]
+    }
